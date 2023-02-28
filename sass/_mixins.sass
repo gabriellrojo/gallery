@@ -1,0 +1,20 @@
+@mixin container
+    padding: 1.5rem
+
+@mixin flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin bg-img($img)
+    background-image: url('../assets/img/#{$img}')
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    filter: grayscale(100%)
+    transition: 0.6s
+
+    &:hover
+        filter: grayscale(0)
+        background-size: 110%
+        opacity: 0.8
